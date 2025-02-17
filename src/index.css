@@ -1,0 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/basis-grotesque-pro');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Basis Grotesque Pro', sans-serif;
+}
