@@ -7,3 +7,7 @@
 body {
   font-family: 'Basis Grotesque Pro', sans-serif;
 }
+.logo{
+  height: 100%;
+  width: 70px;
+}

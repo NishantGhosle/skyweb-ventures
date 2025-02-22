@@ -17,6 +17,7 @@ import {
   Menu,
   X
 } from 'lucide-react';
+import "./index.css";
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -82,8 +83,7 @@ function App() {
             <div className="absolute inset-0 z-20">
               <nav className="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
                 <div className="flex items-center">
-                  <Server className="w-6 h-6 md:w-8 md:h-8 mr-2 text-white" />
-                  <span className="text-lg md:text-xl font-bold text-white">SkyWeb Ventures</span>
+                  <img src="../../SkyWeb/sky-black-1.png" alt="logo" className="logo" />
                 </div>
                 <div className="hidden md:flex space-x-8">
                   <a href="#services" className="text-white hover:text-blue-200">Services</a>
@@ -172,37 +172,31 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {[
               { 
-                icon: <Cloud className="w-10 h-10 md:w-12 md:h-12" />, 
                 title: 'Cloud Solutions', 
                 desc: 'Secure and scalable cloud infrastructure for your business needs',
                 image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80'
               },
               { 
-                icon: <Code2 className="w-10 h-10 md:w-12 md:h-12" />, 
                 title: 'Custom Software', 
                 desc: 'Tailored software solutions to streamline your operations',
                 image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
               },
               { 
-                icon: <Shield className="w-10 h-10 md:w-12 md:h-12" />, 
                 title: 'Cybersecurity', 
                 desc: 'Advanced security measures to protect your digital assets',
                 image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80'
               },
               { 
-                icon: <Users className="w-10 h-10 md:w-12 md:h-12" />, 
                 title: 'IT Consulting', 
                 desc: 'Expert guidance for your technology decisions',
                 image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80'
               },
               { 
-                icon: <Smartphone className="w-10 h-10 md:w-12 md:h-12" />, 
                 title: 'Mobile Development', 
                 desc: 'Native and cross-platform mobile applications',
                 image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80'
               },
               { 
-                icon: <Server className="w-10 h-10 md:w-12 md:h-12" />, 
                 title: 'Infrastructure', 
                 desc: 'Robust IT infrastructure design and management',
                 image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80'
@@ -221,9 +215,7 @@ function App() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
                 <div className="p-6 md:p-8">
-                  <div className="text-blue-600 mb-3 md:mb-4 transform transition-transform duration-300 group-hover:scale-110">
-                    {service.icon}
-                  </div>
+                  
                   <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3">{service.title}</h3>
                   <p className="text-gray-600 text-sm md:text-base">{service.desc}</p>
                 </div>
@@ -366,8 +358,7 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center mb-4">
-                <Server className="w-6 h-6 md:w-8 md:h-8 mr-2" />
-                <span className="text-lg md:text-xl font-bold">SkyWeb Ventures</span>
+              <img src="../../SkyWeb/sky-black-1.png" alt="logo" className="logo" />
               </div>
               <p className="text-gray-400 text-sm md:text-base">Empowering businesses through innovative technology solutions.</p>
             </div>
